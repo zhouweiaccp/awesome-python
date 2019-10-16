@@ -1340,3 +1340,8 @@ I will keep some pull requests open if I'm not sure whether those libraries are 
 - - -
 
 If you have any question about this opinionated list, do not hesitate to contact me [@vinta](https://twitter.com/vinta) on Twitter or open an issue on GitHub.
+
+
+https://github.com/TwoWater/Python.git  Python 入门教程：【草根学 Python （基于Python
+https://github.com/jumper2014/PyCodeComplete Python入门教程，知乎专栏《Python实践之路》的文章和代码
+https://github.com/basicv8vc/Python-Machine-Learning-zh  机器学习

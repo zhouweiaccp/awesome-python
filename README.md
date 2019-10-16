@@ -1345,3 +1345,4 @@ If you have any question about this opinionated list, do not hesitate to contact
 https://github.com/TwoWater/Python.git  Python 入门教程：【草根学 Python （基于Python
 https://github.com/jumper2014/PyCodeComplete Python入门教程，知乎专栏《Python实践之路》的文章和代码
 https://github.com/basicv8vc/Python-Machine-Learning-zh  机器学习
+https://github.com/jobbole/awesome-python-books   如果有人让你推荐 Python 技术书，请让他看这个列表

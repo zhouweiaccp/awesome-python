@@ -1,4 +1,5 @@
 # -*- coding: UTF-8 -*-
+#!/usr/bin/ python3
 # def my_function():
 #     for i in range(10):
 #         print ( i )

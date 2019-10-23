@@ -1,11 +1,34 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-s = (x * x for x in range(5))
-print(s)
-for x in s:
-    print(x)
+# s = (x * x for x in range(5))
+# print(s)
+# for x in s:
+#     print(x)
+'''public
+int
+RecUrsive(int
+index)
 
+{
+
+if (index < 3) // 若index的值等于1或2，则返回1
+
+{
+
+return 1;
+
+}
+
+else
+
+{
+
+return RecUrsive(index - 1) + RecUrsive(index - 2);
+}
+}
+'''
+print('def fib(max):斐波那契数列 https://blog.csdn.net/duanworld/article/details/68489796')
 def fib(max):
     n, a, b = 0, 0, 1
     while n < max:

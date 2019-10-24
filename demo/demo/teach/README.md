@@ -23,3 +23,31 @@ C:\Work> python learning.py
 如果看到`Ready for Python code on port 39093...`表示运行成功，不要关闭命令行窗口，最小化放到后台运行即可。
 
 ![run-learning.py.png](https://raw.githubusercontent.com/michaelliao/learn-python3/master/teach/run-learning.py.png)
+
+
+## 目录
+├─advance
+├─async
+├─basic       基本语法 if for input print  dict list set string tuple
+├─commonlib   第三库
+├─context
+├─db
+├─debug
+├─function
+├─functional
+├─gui
+│  └─turtle
+├─io
+├─mail
+├─module
+├─multitask
+├─oop_advance
+├─oop_basic
+├─packages
+│  └─pil
+├─regex
+├─socket
+├─test
+└─web
+    └─mvc
+        └─templates

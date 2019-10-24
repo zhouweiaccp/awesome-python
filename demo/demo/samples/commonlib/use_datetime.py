@@ -14,7 +14,7 @@ print('dt =', dt)
 
 # 把datetime转换为timestamp:
 print('datetime -> timestamp:', dt.timestamp())
-
+print('datetime -> timestamp:datetime.now():', datetime.now().timestamp())
 # 把timestamp转换为datetime:
 t = dt.timestamp()
 print('timestamp -> datetime:', datetime.fromtimestamp(t))

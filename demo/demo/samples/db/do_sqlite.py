@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sqlite3
+import datetime
 
 # 连接到SQLite数据库
 # 数据库文件是test.db
@@ -10,9 +11,11 @@ conn = sqlite3.connect('test.db')
 # 创建一个Cursor:
 cursor = conn.cursor()
 # 执行一条SQL语句，创建user表:
-cursor.execute('create table user (id varchar(20) primary key, name varchar(20))')
+cursor.execute('create table  IF NOT EXISTS user (id varchar(20) primary key, name varchar(20))')
 # 继续执行一条SQL语句，插入一条记录:
-cursor.execute('insert into user (id, name) values (\'1\', \'Michael\')')
+id=str(datetime.datetime.now().timestamp())
+print('id:'+id)
+cursor.execute('insert into user (id, name) values (\''+id+'\', \'Michael\')')
 # 通过rowcount获得插入的行数:
 print('rowcount =', cursor.rowcount)
 # 关闭Cursor:

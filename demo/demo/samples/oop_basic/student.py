@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+'类和实例'
 class Student(object):
 
     def __init__(self, name, score):
@@ -17,6 +18,7 @@ class Student(object):
             return 'B'
         else:
             return 'C'
+
 
 bart = Student('Bart Simpson', 59)
 lisa = Student('Lisa Simpson', 87)

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+__author__ = 'zw'
 # s = (x * x for x in range(5))
 # print(s)
 # for x in s:
@@ -38,9 +38,11 @@ t = (b, a + b) # t是一个tuple
 a = t[0]
 b = t[1]
 '''
+
+
 def fib(max):
     n, a, b = 0, 0, 1
-    print('1---n:{0},a:{1},b:{2},max:{3}'.format(n,a,b,max))
+    print('1---n:{0},a:{1},b:{2},max:{3}'.format(n, a, b, max))
     while n < max:
         yield b
         print('2-0---n:{0},a:{1},b:{2},max:{3}'.format(n, a, b, max))
@@ -49,11 +51,11 @@ def fib(max):
         n = n + 1
     return 'done'
 
+
 f = fib(10)
 print('fib(10):', f)
 for x in f:
     print(x)
-
 
 # call generator manually:
 g = fib(5)
@@ -64,4 +66,3 @@ while 1:
     except StopIteration as e:
         print('Generator return value:', e.value)
         break
-

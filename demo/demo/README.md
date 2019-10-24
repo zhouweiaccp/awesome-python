@@ -44,6 +44,19 @@ pip install yapf
 
 
 
+## PyCharm设置自己的默认模板
+2.Editor- Code Style - File and Code Templates - Python Script
+
+需要设置什么内容，现在就可以写入了，相关变量参考：
+
+复制代码
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# ${PROJECT_NAME} - 当前Project名称;
+# ${NAME} - 在创建文件的对话框中指定的文件名;
+# ${USER} - 当前用户名;
+# ${DATE} ${TIME} 
+
 
 
 ## PyCharm 使用技巧

@@ -5,6 +5,7 @@ test.txt
 sina.html
 .idea/*
 demo/demo/venv/*
+demo/demo/.idea/*
 # C extensions
 *.so
 

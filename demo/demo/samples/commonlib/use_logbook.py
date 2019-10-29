@@ -46,5 +46,9 @@ def init_logger():
 # 实例化，默认调用
 logger = init_logger()
 
+# actions are:
+# notice / info / trace / warn / error / critical
+
 if __name__ == '__main__':
-    logger.run_log.info("测试log模块，暂时就优化到这一步，后续再改进")
+    run_log.notice('ddddddd',2123)
+    run_log.info("测试log模块，暂时就优化到这一步，后续再改进")

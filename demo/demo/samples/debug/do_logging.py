@@ -5,6 +5,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 import os
 
+
 logger = logging.getLogger(__name__)
 logger.setLevel(level = logging.INFO)
 #定义一个RotatingFileHandler，最多备份3个日志文件，每个日志文件最大1K

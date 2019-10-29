@@ -221,3 +221,12 @@ file -> Setting -> Keymap -> Keymaps -> vuisual studio -> Apply
 
 可参考博客 https://www.cnblogs.com/xxtalhr/p/10645992.html
  
+ 
+## 引用地址
+
+git@github.com:talkpython/100daysofcode-with-python-course.git
+https://github.com/jackfrued/Python-100-Days
+https://github.com/MLEveryday/100-Days-Of-ML-Code
+https://github.com/imtiantian/Python_Awesome_Interview
+https://github.com/wkunzhi/Python3-Spider
+https://github.com/ityouknow/python-100-days

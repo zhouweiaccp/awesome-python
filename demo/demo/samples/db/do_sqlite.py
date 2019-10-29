@@ -29,7 +29,8 @@ conn.close()
 conn = sqlite3.connect('test.db')
 cursor = conn.cursor()
 # 执行查询语句:
-cursor.execute('select * from user where id=?', '1')
+#cursor.execute('select * from user where id=?', '1')
+cursor.execute('select * from user ')
 # 获得查询结果集:
 values = cursor.fetchall()
 print(values)

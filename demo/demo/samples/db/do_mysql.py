@@ -9,7 +9,7 @@
 import mysql.connector
 
 # change root password to yours:
-conn = mysql.connector.connect(user='root', password='password', database='test')
+conn = mysql.connector.connect(user='root', password='root1', database='test')
 
 cursor = conn.cursor()
 # 创建user表:

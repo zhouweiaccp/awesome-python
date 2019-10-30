@@ -32,7 +32,7 @@ log_std = ColorizedStderrHandler(bubble=True)
 log_std.formatter = log_type
 # 日志打印到文件
 log_file = TimedRotatingFileHandler(
-    os.path.join(LOG_DIR, '%s.log' % 'log'),date_format='%Y-%m-%d', bubble=True, encoding='utf-8')
+    os.path.join(LOG_DIR, '%s.log' % 'log'),date_format='%Y-%m-%d', bubble=True, encoding='utf-8',backup_count=2)
 log_file.formatter = log_type
 
 # 脚本日志

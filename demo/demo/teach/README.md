@@ -21,7 +21,7 @@ C:\Work> python learning.py
 ```
 
 如果看到`Ready for Python code on port 39093...`表示运行成功，不要关闭命令行窗口，最小化放到后台运行即可。
-
+https://www.liaoxuefeng.com/wiki/1016959663602400/1017454145929440
 ![run-learning.py.png](https://raw.githubusercontent.com/michaelliao/learn-python3/master/teach/run-learning.py.png)
 
 
@@ -35,7 +35,7 @@ C:\Work> python learning.py
 ├─db
 ├─debug
 ├─function
-├─functional
+├─functional  functools，用于高阶函数：指那些作用于函数或者返回其它函数的函数，Python的functools模块提供了很多有用的功能，其中一个就是偏函数（Partial function）
 ├─gui
 │  └─turtle
 ├─io

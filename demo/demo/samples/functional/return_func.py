@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+# 函数作为返回值 https://www.liaoxuefeng.com/wiki/1016959663602400/1017434209254976
+# 如果不需要立刻求和，而是在后面的代码中，根据需要再计算怎么办？可以不返回求和的结果，而是返回求和的函数
 def lazy_sum(*args):
     def sum():
         ax = 0

@@ -28,7 +28,7 @@ https://www.liaoxuefeng.com/wiki/1016959663602400/1017454145929440
 ## 目录
 ├─advance
 ├─async
-├─basic       基本语法 if for input print  dict list set string tuple
+├─basic       基本语法 if for input print  dict list set string tuple 字符串操作
 ├─commonlib   第三库
 ├─commonlib\commonlib\use_datetime.py  时间处理
 ├─context

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import functools
-
+# wraps，可用作一个装饰器，简化调用update_wrapper的过程；
 def log(func):
     @functools.wraps(func)
     def wrapper(*args, **kw):

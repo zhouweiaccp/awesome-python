@@ -7,9 +7,11 @@ class ListMetaclass(type):
         attrs['add'] = lambda self, value: self.append(value)
         return type.__new__(cls, name, bases, attrs)
 
+
 # 指示使用ListMetaclass来定制类
 class MyList(list, metaclass=ListMetaclass):
     pass
+
 
 L = MyList()
 L.add(1)

@@ -230,3 +230,4 @@ https://github.com/MLEveryday/100-Days-Of-ML-Code
 https://github.com/imtiantian/Python_Awesome_Interview
 https://github.com/wkunzhi/Python3-Spider
 https://github.com/ityouknow/python-100-days
+[代码pdf](https://static.bookstack.cn/projects/liaoxuefeng-python30/books/1531433147.pdf)

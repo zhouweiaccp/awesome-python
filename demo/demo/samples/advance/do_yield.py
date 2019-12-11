@@ -13,17 +13,17 @@ def yield_from(s):
 def main():
     for x in each_ascii('abc'):
         print(x) # => 'a', 'b', 'c'
-    it = each_ascii('xyz')
-    try:
-        while True:
-            print(next(it)) # => 'x', 'y', 'z'
-    except StopIteration as s:
-        print(s.value) # => '3 chars'
+    # it = each_ascii('xyz')
+    # try:
+    #     while True:
+    #         print(next(it)) # => 'x', 'y', 'z'
+    # except StopIteration as s:
+    #     print(s.value) # => '3 chars'
 
     # using yield from in main() will change main() from function to generator:
     # r = yield from each_ascii('hello')
 
-    for ch in yield_from('hello'):
-        pass
+    # for ch in yield_from('hello'):
+    #     pass
 
 main()

@@ -23,7 +23,7 @@ wget -N http://chromedriver.storage.googleapis.com/2.26/chromedriver_linux64.zip
 
 unzip chromedriver_linux64.zip
 #5、移动
-
+/usr/bin/google-chrome -version
 sudo mv -f chromedriver /usr/local/share/chromedriver
 #6、建立软连接
 

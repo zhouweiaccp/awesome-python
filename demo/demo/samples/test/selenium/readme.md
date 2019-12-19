@@ -31,3 +31,5 @@ find_element_by_xpath("//input[@id='kw' and @class='su']/span/input")  #2.4 使�
 
 ## url
 https://selenium-python.readthedocs.io/navigating.html#popup-dialogs
+https://github.com/defnngj/book-code/blob/master/appium_project/app_config.py    Selenium3自动化测试实战 基于Python语言书籍 
+https://github.com/defnngj/pyrequest  本项目为《Web接口开发与自动化测试--基于Python语言》一书中接口自动化测试项目代码。主要针对发布会签到系统的接口进行测试。 发布会签到系统：http://github.com/defnngj/guest

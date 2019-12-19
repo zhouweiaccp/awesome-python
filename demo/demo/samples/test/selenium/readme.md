@@ -26,3 +26,8 @@ find_element_by_xpath("//input[@id='kw' and @class='su']/span/input")  #2.4 使�
 ## 任务
 1.总体测试过了一遍，没有全部练习完
 2.测试总结，分类目录后续要整理
+
+
+
+## url
+https://selenium-python.readthedocs.io/navigating.html#popup-dialogs

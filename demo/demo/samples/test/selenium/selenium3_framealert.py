@@ -39,6 +39,10 @@ driver.maximize_window()
 # 登录腾讯课堂页面
 driver.get('https://ke.qq.com/course/list')
 
+cookies=driver.get_cookies()
+print(type(cookies))
+print(cookies)
+
 # 点击首页登录
 WebDriverWait(20, driver).until(EC.visibility_of_element_located((By.XPATH, '//a[@id="js_login"]')))
 driver.find_element_by_id("js_login").click()

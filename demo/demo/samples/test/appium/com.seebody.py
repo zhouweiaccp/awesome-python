@@ -7,22 +7,41 @@
 # 554961776@qq.com
 
 # 3.导入模块 https://www.cnblogs.com/du-hong/p/10997307.html
+# nox_adb.exe connect 127.0.0.1:62001
+# adb devices
+# aapt dump badging D:\1\Download\zhangtongjiayuan_381.apk
+# C:\Users\chive\AppData\Local\Android\Sdk\tools\bin
+# 测试没有成功，报错如下，怀疑设备名
+# > info: [debug] Getting connected devices...
+# > info: [debug] executing cmd: C:\Users\chive\AppData\Local\Android\Sdk\platform-tools\adb.exe devices
+# > info: [debug] 1 device(s) connected
+# > info: Found device 127.0.0.1:62001
+# > info: [debug] Setting device id to 127.0.0.1:62001
+# > info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+# > info: [debug] executing cmd: C:\Users\chive\AppData\Local\Android\Sdk\platform-tools\adb.exe -s 127.0.0.1:62001 wait-for-device
+# > info: [debug] executing cmd: C:\Users\chive\AppData\Local\Android\Sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "echo 'ready'"
+# > info: [debug] Starting logcat capture
+# > info: [debug] Getting device API level
+# > info: [debug] executing cmd: C:\Users\chive\AppData\Local\Android\Sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "getprop
+
 from appium import webdriver
 import time
 
 desired_caps = {}
 desired_caps['platformName'] = 'Android'  # android的apk还是IOS的ipa
-desired_caps['platformVersion'] = '8.0'  # android系统的版本号
+desired_caps['platformVersion'] = '6.0'  # android系统的版本号
 desired_caps['deviceName'] = '127.0.0.1:62001'  # 手机设备名称，通过adb devices  查看
 desired_caps['appPackage'] = 'com.seebady'  # apk的包名
-desired_caps['appActivity'] = 'android.widget.LinearLayout'  # apk的launcherActivity
+desired_caps['appActivity'] = 'com.seebaby.login.ui.activity.LauncherActivity'  # apk的launcherActivity
 # desired_caps['unicodeKeyboard'] = True   #使用unicodeKeyboard的编码方式来发送字符串
 # desired_caps['resetKeyboard'] = True   #将键盘给隐藏起来
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)  # 启动服务器地址，后面跟的是手机信息
 # 休眠五秒等待页面加载完成
-time.sleep(5)
+time.sleep(60*2)
 
-driver.find_element_by_id("com.seebady:id/android.widget.EditText").click()
+driver.find_element_by_id("com.seebaby:id/et_account").click()
+driver.find_element_by_id("com.seebaby:id/et_account").clear()
+driver.find_element_by_id("com.seebaby:id/et_account").send_keys('18251167280')
 time.sleep(4)
 
 # driver.quit()

@@ -31,19 +31,12 @@ appium-doctor   测试
 * [特推荐免费的代理小工具蓝灯](https://github.com/getlantern/lantern)  https://www.cnblogs.com/du-hong/p/11003755.html
 android sdk 镜像
 1、南阳理工学院镜像服务器地址：mirror.nyist.edu.cn     端口：80
-
 2、中国科学院开源协会镜像站地址：
-
 IPV4/IPV6:mirrors.opencas.cn          端口：80
-
-IPV4/IPV6:mirrors.opencas.org        端口：80
-
+IP4/IPV6:mirrors.opencas.org        端口：80
 IPV4/IPV6:mirrors.opencas.ac.cn     端口：80
-
 3、上海GDG镜像服务器地址：sdk.gdgshanghai.com     端口：8000
-
 4、北京化工大学镜像服务器地址：
-
 IPv4:ubuntu.buct.edu.cn/       端口：80
 IPv4:ubuntu.buct.cn/              端口：80
 IPv6:ubuntu.buct6.edu.cn/     端口：80

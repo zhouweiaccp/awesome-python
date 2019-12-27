@@ -8,6 +8,7 @@ import ldap
 
 #https://support.microsoft.com/zh-cn/help/2977003/the-latest-supported-visual-c-downloads  https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
 #https://download.visualstudio.microsoft.com/download/pr/3b070396-b7fb-4eee-aa8b-102a23c3e4f4/40EA2955391C9EAE3E35619C4C24B5AAF3D17AEAA6D09424EE9672AA9372AEED/VC_redist.x64.exe
+# visual c++ build tools的安装与使用 https://download.microsoft.com/download/5/f/7/5f7acaeb-8363-451f-9425-68a90f98b238/visualcppbuildtools_full.exe
 # pip install python-ldap
 # 还要安装一些环境，ubuntu：
 #

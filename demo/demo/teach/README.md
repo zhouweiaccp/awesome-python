@@ -34,6 +34,7 @@ https://www.liaoxuefeng.com/wiki/1016959663602400/1017454145929440
 ├─context
 ├─db
 ├─debug
+├─devops  自动化运维
 ├─function
 ├─functional  functools，用于高阶函数：指那些作用于函数或者返回其它函数的函数，Python的functools模块提供了很多有用的功能，其中一个就是偏函数（Partial function）
 ├─gui
@@ -49,6 +50,8 @@ https://www.liaoxuefeng.com/wiki/1016959663602400/1017454145929440
 ├─regex
 ├─socket
 ├─test
+    └─appium 手机测试
+    └─selenium 浏览器测试
 └─web
     └─mvc
         └─templates

@@ -54,3 +54,5 @@ MANIFEST
 .mr.developer.cfg
 .project
 .pydevproject
+/Pipfile
+/venv/

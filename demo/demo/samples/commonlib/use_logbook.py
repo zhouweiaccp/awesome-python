@@ -8,13 +8,15 @@
 # https://www.cnblogs.com/imyalost/p/9026379.html
 import os
 import sys
+import socket
 import logbook
 from logbook import Logger,StreamHandler,FileHandler,TimedRotatingFileHandler
 from logbook.more import ColorizedStderrHandler
 
 def log_type(record,handler):
-    log = "[{date}] [{level}] [{filename}] [{func_name}] [{lineno}] {msg}".format(
+    log = "[{date}] [{hostname}] [{level}] [{filename}] [{func_name}] [{lineno}] {msg}".format(
         date = record.time,                              # 日志时间
+        hostname=socket.gethostname(),          # 主机名
         level = record.level_name,                       # 日志等级
         filename = os.path.split(record.filename)[-1],   # 文件名
         func_name = record.func_name,                    # 函数名

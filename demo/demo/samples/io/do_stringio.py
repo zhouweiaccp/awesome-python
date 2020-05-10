@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+#数据读写不一定是文件， 也可以在内存中读写
 from io import StringIO
 
 # write to StringIO:

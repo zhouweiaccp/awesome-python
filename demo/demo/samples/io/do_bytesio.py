@@ -3,7 +3,7 @@
 
 from io import BytesIO
 
-# write to BytesIO:
+# write to BytesIO: BytesIO实现了在内存中读写bytes
 f = BytesIO()
 f.write(b'hello')
 f.write(b' ')

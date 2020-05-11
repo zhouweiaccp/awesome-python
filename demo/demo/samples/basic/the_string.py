@@ -41,3 +41,33 @@ print (str.encode('gbk'))      # 输出  b'\xd1\xa7\xcf\xb0Python'
 # decode 将字节转换为字符
 print (str.encode().decode('utf8'))   # 输出 '学习Python'
 print (str.encode('gbk').decode('gbk'))             # 输出 '学习Python'
+
+# 字符串拼接 mehon5 直接连接
+str_name2='33'
+print('str_name1' + str_name2)
+print('-----------method5-----------')
+
+print('hello''python')
+
+# methon6 format 拼接 str.format(args,**kwargs)
+# eg(1) {} 充当占位符
+str_word = 'hello, word! {} {}'.format('张三', '李四')
+print(str_word)
+# eg(2) {[index]} 按索引位置填充 .format([0]=value1, [1]= value1},)
+str_word_index0 = 'hell0, word！{0},{1}'.format('张三', '李四')
+str_word_index1 = 'hell0, word！{1},{0}'.format('张三', '李四')
+print(str_word_index0)
+print(str_word_index1)
+# eg(3) {[keyword]}
+str_word_keyword = 'hell0, word！{a},{b}'.format(b='张三', a='李四')
+print(str_word_keyword)
+# eg(4) {[keyword,indec]} keyword 放在最后
+str_word1 = 'hell0, word！{1}{a}{0},{b}'.format('index0', 'index1', b='张三', a='李四')
+print(str_word1)
+# eg(5) format 参数类型不限，当为元祖，列表，集合，字典时输出
+str_word2 = 'hell0, word！{b}'.format(b=['eee', 'd'])
+print(str_word2)
+# eg(6) 作为函数使用
+str_word3 = 'hello, word! {} {}'.format
+word = str_word3('张三', '李四')
+print(word)

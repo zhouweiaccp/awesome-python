@@ -3,10 +3,13 @@
 import os
 import subprocess
 
-os.system('dir')
-os.popen('dir').readlines()
-# for name in read_fh:
-#     name = name.decode('gbk').encode('utf-8')
+ss=os.system('dir')
+print('type ----- %s'%type(ss))
+read_fh=os.popen('dir').readlines()
+print(type(read_fh))
+for name in read_fh:
+    print(name)
+   # name = name.decode('gbk').encode('utf-8')
 
 
 print('subprocess......')

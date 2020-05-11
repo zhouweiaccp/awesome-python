@@ -1,4 +1,4 @@
-class Dict(dict):
+class DDict(dict):
 
     def __init__(self, **kw):
         super().__init__(**kw)

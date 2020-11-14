@@ -25,6 +25,17 @@ https://www.liaoxuefeng.com/wiki/1016959663602400/1017454145929440
 ![run-learning.py.png](https://raw.githubusercontent.com/michaelliao/learn-python3/master/teach/run-learning.py.png)
 
 
+
+
+## 语法
+
+
+### 调用函数时使用* **
+test(*args)* 的作用其实就是把序列 args 中的每个元素，当作位置参数传进去。比如上面这个代码，如果 args 等于 (1,2,3) ，那么这个代码就等价于 test(1, 2, 3) 。
+test(**kwargs)** 的作用则是把字典 kwargs 变成关键字参数传递。比如上面这个代码，如果 kwargs 等于 {'a':1,'b':2,'c':3} ，那这个代码就等价于 test(a=1,b=2,c=3) 
+
+
+
 ## 目录
 ├─advance
 ├─async

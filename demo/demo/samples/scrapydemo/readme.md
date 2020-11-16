@@ -1,7 +1,11 @@
 
-
-
-
+# 引用库
+* [lxml 4.4.1.0]()
+* [cssselect]()
+* [parsel]()
+* [w3lib](https://github.com/scrapy/w3lib) remove comments, or tags from HTML snippets
+* [Twisted]()
+* []()
 # 2.scrapy 选择器
 （1） 正则表达式 ——re()
 

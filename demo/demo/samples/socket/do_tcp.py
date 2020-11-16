@@ -4,14 +4,16 @@
 import socket
 import uuid
 
-def get_mac_address():
-    mac=uuid.UUID(int = uuid.getnode()).hex[-12:]
-    #return ":".join([mac[e:e+2]for ein range(0,11,2)])
 
-#获取本机电脑名
-myname= socket.getfqdn(socket.gethostname(  ))
-#获取本机ip
-myaddr= socket.gethostbyname(myname)
+def get_mac_address():
+    mac = uuid.UUID(int=uuid.getnode()).hex[-12:]
+    # return ":".join([mac[e:e+2]for ein range(0,11,2)])
+
+
+# 获取本机电脑名
+myname = socket.getfqdn(socket.gethostname())
+# 获取本机ip
+myaddr = socket.gethostbyname(myname)
 print(myname)
 print(myaddr)
 

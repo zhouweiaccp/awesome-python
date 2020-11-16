@@ -8,7 +8,8 @@ from balingtxt.items import BalingtxtItem
 class BalingtxtspiderSpider(scrapy.Spider):
     name = 'balingtxtSpider'
     allowed_domains = ['balingtxt.com']
-    start_urls = ['http://www.balingtxt.com/sort1/15.html']
+    offset=1
+    start_urls = ['http://www.balingtxt.com/sort1/{}}.html'.format(offset)]
 
     def parse(self, response):
         self.log("A response from %s just arrived!" % response.url)
@@ -22,6 +23,8 @@ class BalingtxtspiderSpider(scrapy.Spider):
             item['newDate'] = site.xpath("./div[@class='title_box']/div[@class='book_rg']/span[2]/em/text()").extract()[
                 0]
             item['remark'] = site.xpath("./div[@class='book_jj']/text()").extract()[0]
+            #lastpage '123'
+            strmaxpage=response.xpath('//div[@id="pages"]/div[1]/div[1]/div[1]/a[@class="last"]/text()').extract_first()
             # more specific
             # item['category'] = urllib.unquote('/'.join(response.url.split('/')[-3:])).decode('utf-8')
             items.append(item)

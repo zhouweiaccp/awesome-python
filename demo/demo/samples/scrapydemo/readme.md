@@ -19,6 +19,9 @@ response.css("xxx::attr()").extract_first()——获取节点的属性值（不�
 
 ## crawl
 scrapy crawl  balingtxtSpider -o itm.json -s FEED_EXPORT_ENCODING=utf-8
+scrapy crawl example -o example.db -t sqlite3 [](https://www.cnblogs.com/hhh5460/p/5836136.html)
+
+
 
 ## css
 类选择器：元素的class属性，比如class="box"表示选取class为box的元素；
@@ -57,11 +60,15 @@ xpath('//a[re:test(@id, "i\d+")]/@href').extract()        # 所有a标签，取h
 
 xpath('/html/body/ul/li/a/@href').extract()        # 取所有的值
 xpath('//body/ul/li/a/@href').extract_first()    # 取第一个值
-
+response.xpath(//*[@itemprop="name"][1]/text()').extract())
+response.xpath('//*[@itemprop="price"][1]/text()').re('[.0-9]+'))
+response.xpath('//*[@itemprop="description"][1]/text()').extract())
+response.xpath('//*[@itemtype="http://schema.org/''Place"][1]/text()').extract())
+response.xpath('//*[@itemprop="image"][1]/@src').extract())
 
 
 ## link
-*[Python_Master_Courses](https://github.com/makelove/Python_Master_Courses/)Python大师课程 
+*[Python_Master_Courses](https://github.com/makelove/Python_Master_Courses/) Python大师课程 
 *[itcast.cn教程](https://github.com/AndyofJuly?tab=repositories)
 *[smart_login](https://github.com/SpiderClub/smart_login) 各大网站登陆方式，有的是通过selenium登录，有的是通过抓包直接模拟登录
 *[SpiderClub](https://github.com/SpiderClub) 分布式爬虫

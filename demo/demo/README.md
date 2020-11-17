@@ -45,10 +45,8 @@ pip install yapf
 
 
 ## PyCharm设置自己的默认模板
-2.Editor- Code Style - File and Code Templates - Python Script
-
+2. file- setting..- Editor- Code Style - File and Code Templates - Python Script
 需要设置什么内容，现在就可以写入了，相关变量参考：
-
 复制代码
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-

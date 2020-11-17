@@ -5,7 +5,7 @@
 * [parsel]()
 * [w3lib](https://github.com/scrapy/w3lib) remove comments, or tags from HTML snippets
 * [Twisted]()
-* []()
+* [urllib]()urllib是python内置的http请求库，本文介绍urllib三个模块：请求模块urllib.request、异常处理模块urllib.error、url解析模块urllib.parse
 # 2.scrapy 选择器
 （1） 正则表达式 ——re()
 

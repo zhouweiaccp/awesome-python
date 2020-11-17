@@ -6,6 +6,13 @@
 * [w3lib](https://github.com/scrapy/w3lib) remove comments, or tags from HTML snippets
 * [Twisted]()
 * [urllib]()urllib是python内置的http请求库，本文介绍urllib三个模块：请求模块urllib.request、异常处理模块urllib.error、url解析模块urllib.parse
+
+
+
+# 目标
+1. Python 的解析库 xpath、pyquery、beautifulSoup、 json、 xml.sax、 re
+
+3. https://mp.weixin.qq.com/s?__biz=MzU2ODYzNTkwMg==&mid=2247484770&idx=1&sn=16427865c7b2785594acfbcf4505e26f&chksm=fc8bbdf3cbfc34e5856dd36dd825f9b89b05a4ab3def08dac48b760771e4ee0454fdf9ddee72&scene=27#wechat_redirect
 # 2.scrapy 选择器
 （1） 正则表达式 ——re()
 
@@ -70,6 +77,47 @@ response.xpath('//*[@itemprop="description"][1]/text()').extract())
 response.xpath('//*[@itemtype="http://schema.org/''Place"][1]/text()').extract())
 response.xpath('//*[@itemprop="image"][1]/@src').extract())
 
+- [](http://www.gooseeker.com/doc/thread-1852-1-1.html)
+1）contains(str1,str2)  用来判断str1是否包含str2
+例1：//*[contains(@class,'c-summaryc-row ')]  选择@class值中包含c-summary c-row的节点
+例2：//div[contains(.//text(),'价格')]  选择text()中包含价格的div节点
+
+2）position()  选择当前的第几个节点
+例1：//*[@class='result'][position()=1]   选择@class='result'的第一个节点
+例2：//*[@class='result'][position()<=2]   选择@class='result'的前两个节点
+
+3）last()  选择当前的倒数第几个节点
+例1：//*[@class='result'][last()]   选择@class='result'的最后一个节点
+例2：//*[@class='result'][last()-1]   选择@class='result'的倒数第二个节点
+
+4）following-sibling 选取当前节点之后的所有同级节点
+例1：//div[@class='result']/following-sibling::div   选择@class='result'的div节点后所有同级div节点     找到多个节点时可通过position确定第几个如：//div[@class='result']/following-sibling::div[position()=1]
+
+5）preceding-sibling 选取当前节点之前的所有同级节点
+使用方法同following-sibling
+
+二、过滤信息
+1）substring-before(str1,str2)  用于返回字符串str1中位于第一个str2之前的部分
+例子：substring-before(.//*[@class='c-more_link']/text(),'条')
+返回.//*[@class='c-more_link']/text()中第一个'条'前面的部分，如果不存在'条'，则返回空值
+
+2）substring-after(str1,str2)  跟substring-before类似，返回字符串str1中位于第一个str2之后的部分
+例1：substring-after(.//*[@class='c-more_link']/text(),'条')
+返回.//*[@class='c-more_link']/text()中第一个’条’后面的部分，如果不存在'条'，则返回空值
+例2：substring-after(substring-before(.//*[@class='c-more_link']/text(),'新闻'),'条')
+返回.//*[@class='c-more_link']/text()中第一个'新闻'前面与第一个'条'后面之间的部分
+
+3）normalize-space()
+用来将一个字符串的头部和尾部的空白字符删除，如果字符串中间含有多个连续的空白字符，将用一个空格来代替
+例子：normalize-space(.//*[contains(@class,'c-summaryc-row ')])
+
+4）translate(string,str1,str2)
+假如string中的字符在str1中有出现，那么替换为str1对应str2的同一位置的字符，假如str2这个位置取不到字符则删除string的该字符
+例子：translate('12:30','03','54')   结果：'12:45'
+
+三、拼接信息
+1）concat()  函数用于串连多个字符串
+例子：concat('http://baidu.com',.//*[@class='c-more_link']/@href)
 
 ## link
 *[Python_Master_Courses](https://github.com/makelove/Python_Master_Courses/) Python大师课程 

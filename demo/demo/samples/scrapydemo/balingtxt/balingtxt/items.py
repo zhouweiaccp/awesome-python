@@ -15,6 +15,9 @@ class BalingtxtItem(scrapy.Item):
     status = scrapy.Field()
     newDate = scrapy.Field()
     remark = scrapy.Field()
+    downnum = scrapy.Field()
+    sizenum = scrapy.Field()
+    author = scrapy.Field()
     # define the fields for your item here like:
     # name = scrapy.Field()
     #pass

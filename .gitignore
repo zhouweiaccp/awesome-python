@@ -56,3 +56,4 @@ MANIFEST
 .pydevproject
 /Pipfile
 /venv/
+/demo/demo/samples/scrapydemo/balingtxt/itm.json

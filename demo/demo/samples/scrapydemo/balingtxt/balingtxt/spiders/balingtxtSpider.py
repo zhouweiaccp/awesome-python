@@ -9,7 +9,7 @@ class BalingtxtspiderSpider(scrapy.Spider):
     name = 'balingtxtSpider'
     allowed_domains = ['balingtxt.com']
     offset=1
-    start_urls = ['http://www.balingtxt.com/sort1/{}}.html'.format(offset)]
+    start_urls = ['http://www.balingtxt.com/sort1/{}.html'.format(offset)]
 
     def parse(self, response):
         self.log("A response from %s just arrived!" % response.url)
@@ -29,3 +29,8 @@ class BalingtxtspiderSpider(scrapy.Spider):
             # item['category'] = urllib.unquote('/'.join(response.url.split('/')[-3:])).decode('utf-8')
             items.append(item)
         return items
+
+    # 字符串查找， strsize=sites[0].xpath('./div[3]/span[1]/small[2]').extract_first()
+    #strpan=sites[0].xpath('./div[3]/span[1]').extract_first()
+    def getsiz(self,source,str2):
+        pass

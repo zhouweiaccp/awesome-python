@@ -53,6 +53,7 @@ response.css('a[href*=image]::attr(href)').extract()：返回所有a标签中hre
 response.css('a[href*=image] img::attr(src)').extract()：返回所有a标签下image标签的src属性；
 
 ![](./css.png)
+![](./debug_demo.jpg)
 
 ##  xpath
 xpath('//a')    # 所有a标签(子孙后代)

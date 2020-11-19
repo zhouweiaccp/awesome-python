@@ -49,6 +49,7 @@ test(**kwargs)** 的作用则是把字典 kwargs 变成关键字参数传递。�
 ├─commonlib\commonlib\use_datetime.py  时间处理
 ├─context
 ├─db
+    do_sqliteDemo.py do_sqlite.py sqlite 操作
 ├─debug
     do_logging 日志
 ├─devops  自动化运维

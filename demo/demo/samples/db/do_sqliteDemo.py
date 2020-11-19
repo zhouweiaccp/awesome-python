@@ -6,7 +6,7 @@
 # 2020/11/19 20:22 https://www.pythoncentral.io/introduction-to-sqlite-in-python/
 
 import sqlite3
-
+import random
 
 # Create a database in RAM
 # db = sqlite3.connect(':memory:')
@@ -29,13 +29,13 @@ db.commit()
 cursor = db.cursor()
 name1 = 'Andres'
 phone1 = '3366858'
-email1 = 'user@example.com'
+email1 = str(random.random())+'user@example.com'
 # A very secure password
 password1 = '12345'
 
 name2 = 'John'
 phone2 = '5557241'
-email2 = 'johndoe@example.com'
+email2 =  str(random.randint(5,100))+'dsdfjohndoe@example.com'
 password2 = 'abcdef'
 
 # Insert user 1
@@ -49,8 +49,8 @@ cursor.execute('''INSERT INTO users(name, phone, email, password)
 print('Second user inserted')
 db.commit()
 
-# id = cursor.lastrowid
-# print('Last row id: %d' % id)
+id = cursor.lastrowid
+print('Last row id: %d' % id)
 
 #  The values of the Python variables are passed inside a tuple. Another way to do this is passing a dictionary using the ":keyname" placeholder:
 # cursor.execute('''INSERT INTO users(name, phone, email, password)

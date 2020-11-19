@@ -28,5 +28,17 @@ from scrapy.utils.project import get_project_settings
 
 if __name__ == '__main__':
     process = CrawlerProcess(get_project_settings())
-    process.crawl('80txt')    #  你需要将此处的spider_name替换为你自己的爬虫名称
+    process.crawl('balingtxtSpider')    #  你需要将此处的spider_name替换为你自己的爬虫名称
     process.start()
+
+
+
+# import scrapy
+# from scrapy.crawler import CrawlerProcess
+# from baidu_com import BaiduComSpider
+#
+# # 创建一个CrawlerProcess对象
+# process = CrawlerProcess() # 括号中可以添加参数
+#
+# process.crawl(BaiduComSpider)
+# process.start()

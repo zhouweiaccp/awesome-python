@@ -53,6 +53,7 @@ response.css('a[href*=image]::attr(href)').extract()：返回所有a标签中hre
 response.css('a[href*=image] img::attr(src)').extract()：返回所有a标签下image标签的src属性；
 
 ![](./css.png)
+![](./debug_demo.jpg)
 
 ##  xpath
 xpath('//a')    # 所有a标签(子孙后代)
@@ -118,6 +119,51 @@ response.xpath('//*[@itemprop="image"][1]/@src').extract())
 三、拼接信息
 1）concat()  函数用于串连多个字符串
 例子：concat('http://baidu.com',.//*[@class='c-more_link']/@href)
+
+
+
+##启动
+
+### 方式一：scrapy runspider命令（全局）
+语法：scrapy runspider <spider_file.py>
+
+### 方式二scrapy crawl balingtxtSpider
+name = 'balingtxtSpider'
+
+### 方式三
+```python
+import scrapy
+from scrapy.crawler import CrawlerProcess
+from baidu_com import BaiduComSpider
+
+# 创建一个CrawlerProcess对象
+process = CrawlerProcess() # 括号中可以添加参数
+
+process.crawl(BaiduComSpider)
+process.start()
+```
+
+### 方式四：CrawlerRunner
+https://www.cnblogs.com/luo630/p/9262486.html
+```python
+from twisted.internet import reactor
+import scrapy
+from scrapy.crawler import CrawlerRunner
+from scrapy.utils.log import configure_logging
+from baidu_com import BaiduComSpider
+from techmeme_com import TechmemeComSpider
+
+configure_logging()
+
+# 创建一个CrawlerRunner对象
+runner = CrawlerRunner()
+
+runner.crawl(BaiduComSpider)
+runner.crawl(TechmemeComSpider)
+d = runner.join() # 在多线程编程中见到过此函数，这里是？
+d.addBoth(lambda _: reactor.stop()) # addBoth参考Derrerred的文档
+reactor.run()
+```
 
 ## link
 * [Python_Master_Courses](https://github.com/makelove/Python_Master_Courses/) Python大师课程 

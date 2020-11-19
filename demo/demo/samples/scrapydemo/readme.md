@@ -174,10 +174,13 @@ reactor.run()
 * [wechat-spider)](https://github.com/pythonchannel/wechat-spider) 微信手机客户端爬虫，爬取公众号所有 文章、阅读量、点赞量和评论内容 ---思路比较细
 * [wechat-spider)](https://github.com/striver-ing/wechat-spider) 开源微信爬虫：爬取公众号所有 文章、阅读量、点赞量和评论内容。易部署。持续维护！！！
 * [](https://github.com/54xingzhe/weixin_crawler) weixin_crawler是一款使用Scrapy、Flask、Echarts、Elasticsearch等实现的微信公众号文章爬虫，自带分析报告和全文检索功能，几百万的文档都能瞬间搜索。
+* [PythonSpiderNotes](https://github.com/lining0806/PythonSpiderNotes) Python入门网络爬虫之精华版
 * [](https://github.com/pythonchannel/download-no-copyright-image) 好文章链接
 * [](https://mp.weixin.qq.com/s?__biz=MjM5MTQ4NjA3Nw==&mid=2459678096&idx=1&sn=2cc8436f8ab35b03ba81e4e65758ecac&chksm=b1dbcc8286ac4594116c20aa6c9ff36e3428cd19903225bc8e27f20d8e3c27930f4f79d06550&scene=21#wechat_redirect)
 * [awesome-web-scraping](https://github.com/lorien/awesome-web-scraping/blob/master/python.md#web-scraping) 156个Python网络爬虫资源
-*[]()
-*[]()
-*[]()
-*[]()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()

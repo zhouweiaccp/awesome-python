@@ -1,10 +1,10 @@
 
 # 引用库
-* [lxml 4.4.1.0]()
+* [lxml 4.4.1.0]()一个高效的XML和HTML解析器
 * [cssselect]()
-* [parsel]()
+* [parsel]()  一个基于 lxml 的 HTML / XML 数据提取库
 * [w3lib](https://github.com/scrapy/w3lib) remove comments, or tags from HTML snippets
-* [Twisted]()
+* [Twisted]()一个异步的网络框架
 * [urllib]()urllib是python内置的http请求库，本文介绍urllib三个模块：请求模块urllib.request、异常处理模块urllib.error、url解析模块urllib.parse
 
 

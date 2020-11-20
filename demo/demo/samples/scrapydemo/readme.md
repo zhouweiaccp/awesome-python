@@ -8,18 +8,25 @@
 * [urllib]()urllib是python内置的http请求库，本文介绍urllib三个模块：请求模块urllib.request、异常处理模块urllib.error、url解析模块urllib.parse
 
 
+## 第三库
+* [selenium](http://selenium-python.readthedocs.io/) - automating real browsers (Chrome, Firefox, Opera, IE)
+* [Ghost.py](http://carrerasrodrigo.github.io/Ghost.py/) - wrapper of QtWebKit (requires PyQT)
+* [Spynner](https://github.com/makinacorpus/spynner) - wrapper of QtWebKit QtWebKit (requires PyQT)
+* [Splinter](https://github.com/cobrateam/splinter) - univeral API to browser emulators (selenium webdrivers, django client, zope)
+* [Requestium](https://github.com/tryolabs/requestium) - Integration layer between Requests and Selenium for automation of web actions.
+* [Splash](https://github.com/scrapinghub/splash) - Lightweight, scriptable browser as a service with an HTTP API.
+* [pyppeteer](https://github.com/miyakogi/pyppeteer) - Web 自动化测试框架 Puppeteer 是 Google 基于 Node.js 开发的一个工具，主要是用来操纵 Chrome  浏览器的 APIHeadless chrome/chromium automation library (unofficial port of puppeteer)
+* [Playwright](https://github.com/microsoft/playwright-python) - Playwright is a Python library to automate Chromium, Firefox and WebKit browsers with a single API
+   * [来源](https://github.com/lorien/awesome-web-scraping) 
 
 # 目标
 1. Python 的解析库 xpath、pyquery、beautifulSoup、 json、 xml.sax、 re
-
 3. https://mp.weixin.qq.com/s?__biz=MzU2ODYzNTkwMg==&mid=2247484770&idx=1&sn=16427865c7b2785594acfbcf4505e26f&chksm=fc8bbdf3cbfc34e5856dd36dd825f9b89b05a4ab3def08dac48b760771e4ee0454fdf9ddee72&scene=27#wechat_redirect
+
 # 2.scrapy 选择器
 （1） 正则表达式 ——re()
-
 （2）xpath——xpath()
-
 （3）CSS——css()
-
 response.css("xxx").extract() ——提取所有节点（然后可以通过循环遍历所有的子节点）
 response.css("xxx").extract_first() ——提取第一个节点
 response.css("xxx::text").extract_first()——获取节点的内部文本

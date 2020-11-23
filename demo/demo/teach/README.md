@@ -89,3 +89,18 @@ random.random() #0.9876097190672816
 ```
 ### 内置的函数
 dir() 可以找到模块内定义的所有名称
+
+
+### 测网速speedtest-cli
+ pip install speedtest-cli
+ - [](https://github.com/makelove/Python_Master_Courses/blob/87d04641aeb774a40b23dd25825c07afcab74cef/网络管理/测网速speedtest-cli.md#L1)
+ 
+ 
+ ### 随机生成IPv4地址：
+```python
+import random
+import socket
+import struct
+
+ipv4=socket.inet_ntoa(struct.pack('>I', random.randint(1, 0xffffffff)))
+```

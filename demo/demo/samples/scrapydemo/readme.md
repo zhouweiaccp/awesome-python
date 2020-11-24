@@ -16,6 +16,7 @@
 * [Requestium](https://github.com/tryolabs/requestium) - Integration layer between Requests and Selenium for automation of web actions.
 * [Splash](https://github.com/scrapinghub/splash) - Lightweight, scriptable browser as a service with an HTTP API.
 * [pyppeteer](https://github.com/miyakogi/pyppeteer) - Web 自动化测试框架 Puppeteer 是 Google 基于 Node.js 开发的一个工具，主要是用来操纵 Chrome  浏览器的 APIHeadless chrome/chromium automation library (unofficial port of puppeteer)
+   * [puppeteer](https://github.com/puppeteer/puppeteer) npm i puppeteer
 * [Playwright](https://github.com/microsoft/playwright-python) - Playwright is a Python library to automate Chromium, Firefox and WebKit browsers with a single API
    * [来源](https://github.com/lorien/awesome-web-scraping) 
 

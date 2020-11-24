@@ -26,6 +26,123 @@ ChroPath
 find_element_by_xpath("//form[@id='form']/span/input") 2.3 层级与属性结合：
 find_element_by_xpath("//input[@id='kw' and @class='su']/span/input")  #2.4 使用逻辑运算符
 
+## Selenium2 Python自动化测试实战
+[](F:\Program Files\Tencent\584936909\FileRecv\Selenium2 Python自动化测试实战（第二版）.pdf)
+
+### Selenium2 find_element
+1. find_element_by_id()   <div id="123">aa</div>
+2. find_element_by_name()   <input type="text" name="aa123"/>
+3. find_element_by_class_name() <input type="text" class="aa123"/>
+4. find_element_by_tag_name("inpute")  <input type="text" name="aa123"/>
+5. find_element_by_link_text("wwxxx")   <a href="ww">wwxxx</a>
+6. find_element_by_partial_link_text("ww") <a href="ww">wwxxx</a>
+7. find_element_by_xpath()
+8. find_element_by_css_selector(".bg s_btn")
+
+find_element(By.ID,"kw")
+find_element(By.NAME,"wd")
+find_element(By.CLASS_NAME,"s_ipt")
+find_element(By.TAG_NAME,"input")
+find_element(By.LINK_TEXT,u"新闻")
+find_element(By.PARTIAL_LINK_TEXT,u"新")
+find_element(By.XPATH,"//*[@class='bg s_btn']")
+find_element(By.CSS_SELECTOR,"span.bg s_btn_wr>input#su")
+
+### 鼠标事件
+ ActionChains 中存储的行为
+ context_click() 右击
+ double_click() 双击
+ drag_and_drop() 拖动
+ move_to_element() 鼠标悬停
+
+from selenium import webdriver
+#引入 ActionChains 类
+from selenium.webdriver.common.action_chains import ActionChains
+driver = webdriver.Firefox()
+driver.get("http://yunpan.360.cn")
+....
+#定位到要右击的元素
+right_click =driver.find_element_by_id("xx")
+#对定位到的元素执行鼠标右键操作
+ActionChains(driver).context_click(right_click).perform()
+
+#执行元素的拖放操作
+ActionChains(driver).drag_and_drop(element,target).perform()
+
+#对定位到的元素执行双击操作
+ActionChains(driver).double_click(double_click).perform()
+
+
+### 等待
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+driver = webdriver.Firefox()
+driver.get("http://www.baidu.com")
+element = WebDriverWait(driver,5,0.5).until(
+EC.presence_of_element_located((By.ID,"kw"))
+)
+element.send_keys('selenium')
+driver.quit()
+
+### 隐式等待
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait《Selenium2 Python 自动化测试实战》样张
+85
+driver = webdriver.Firefox()
+driver.implicitly_wait(10)
+driver.get("http://www.baidu.com")
+input_ = driver.find_element_by_id("kw22")
+input_.send_keys('selenium')
+driver.quit()
+
+
+###  4.9 多表单切换
+from selenium import webdriver
+import time
+import os
+driver = webdriver.Firefox()
+file_path = 'file:///' + os.path.abspath('frame.html')
+driver.get(file_path)
+#切换到 iframe（id = "if"）
+driver.switch_to_frame("if")
+#下面就可以正常的操作元素了
+driver.find_element_by_id("kw").send_keys("selenium")
+driver.find_element_by_id("su").click()
+time.sleep(3)
+driver.quit(
+
+### 4.10 多窗口切换
+from selenium import webdriver
+driver = webdriver.Firefox()
+driver.implicitly_wait(10)
+driver.get("http://www.baidu.com")
+#获得百度搜索窗口句柄
+sreach_windows= driver.current_window_handle
+driver.find_element_by_link_text(u'登录').click()
+driver.find_element_by_link_text(u"立即注册").click()《Selenium2 Python 自动化测试实战》样张
+93
+#获得当前所有打开的窗口的句柄
+all_handles = driver.window_handles
+#进入注册窗口
+for handle in all_handles:
+if handle != sreach_windows:
+driver.switch_to_window(handle)
+print 'now register window!'
+driver.find_element_by_name("account").send_keys('username')
+driver.find_element_by_name('password').send_keys('password')
+#……
+#进入搜索窗口
+for handle in all_handles:
+if handle == sreach_windows:
+driver.switch_to_window(handle)
+print 'now sreach window!'
+driver.find_element_by_id('TANGRAM__PSP_2__closeBtn').click()
+driver.find_element_by_id("kw").send_keys("selenium")
+driver.find_element_by_id("su").click()
+time.sleep(5)
+driver.quit(
 ## 任务
 1.总体测试过了一遍，没有全部练习完
 2.测试总结，分类目录后续要整理

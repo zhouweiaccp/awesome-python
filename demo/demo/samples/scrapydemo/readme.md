@@ -186,7 +186,7 @@ reactor.run()
 * [](https://github.com/pythonchannel/download-no-copyright-image) 好文章链接
 * [](https://mp.weixin.qq.com/s?__biz=MjM5MTQ4NjA3Nw==&mid=2459678096&idx=1&sn=2cc8436f8ab35b03ba81e4e65758ecac&chksm=b1dbcc8286ac4594116c20aa6c9ff36e3428cd19903225bc8e27f20d8e3c27930f4f79d06550&scene=21#wechat_redirect)
 * [awesome-web-scraping](https://github.com/lorien/awesome-web-scraping/blob/master/python.md#web-scraping) 156个Python网络爬虫资源
-* []()
+* [anycodes](https://space.bilibili.com/35850273/channel/detail?cid=34163)  好的python spider教程
 * []()
 * []()
 * []()

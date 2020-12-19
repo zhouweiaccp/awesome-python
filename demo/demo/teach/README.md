@@ -64,6 +64,17 @@ test(**kwargs)** 的作用则是把字典 kwargs 变成关键字参数传递。�
        sys_cmd 系统命令
 ├─multitask
 ├─oop_advance 面向对象高级编程 __slots__ [限制属性] @property
+    create_class_on_the_fly.py
+    orm.py
+    special_call.py
+    special_getattr.py
+    special_getitem.py
+    special_iter.py
+    special_str.py
+    use_enum.py
+    use_metaclass.py  metaclass是创建类
+    use_property.py  class get set 属性
+    use_slots.py    class  应用 __slots__
 ├─oop_basic  面向对象编程 【类  多态 继承  实例
 ├─packages
 │  └─pil
